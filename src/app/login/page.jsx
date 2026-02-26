@@ -25,7 +25,7 @@ export default function LoginPage() {
     const userRole = email === "staff@example.com" ? "BUYER" : "SELLER"; 
 
     // 3. The Routing Logic
-    if (userRole === "STAFF") {
+    if (userRole === "SELLER") {
       router.push('/seller/dashboard'); 
     } else {
       router.push('/'); // Or just '/' if your main page is there
